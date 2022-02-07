@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/four-func-calc/static/css/main.20023b2b.css",
+    "main.css": "/four-func-calc/static/css/main.cd0f95cb.css",
     "main.js": "/four-func-calc/static/js/main.fe73496a.js",
     "index.html": "/four-func-calc/index.html",
-    "main.20023b2b.css.map": "/four-func-calc/static/css/main.20023b2b.css.map",
+    "main.cd0f95cb.css.map": "/four-func-calc/static/css/main.cd0f95cb.css.map",
     "main.fe73496a.js.map": "/four-func-calc/static/js/main.fe73496a.js.map"
   },
   "entrypoints": [
-    "static/css/main.20023b2b.css",
+    "static/css/main.cd0f95cb.css",
     "static/js/main.fe73496a.js"
   ]
 }
