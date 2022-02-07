@@ -1,0 +1,68 @@
+.Calculator {
+  box-sizing: border-box;
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: .25em;
+  row-gap: 1em;
+}
+
+@media (min-width: 800px) {
+  .Calculator {
+    max-width: 30em;
+    margin: 0 auto;
+  }
+}
+
+.num-display {
+  grid-column-end: span 4;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #191847;
+  border: .25em dashed #8f60de;
+  border-radius: 1em;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.clear-btn {
+  grid-column-end: span 3;
+}
+
+.zero-btn {
+  grid-column-end: span 2;
+}
+
+.Calculator button {
+  transition: all .25s;
+  font-size: inherit;
+  text-align: center;
+  border: 0;
+  background: #ece1ff;
+  color: #191847;
+  font-weight: bold;
+}
+
+.clear-btn, .seven-btn, .four-btn, .one-btn, .zero-btn {
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.equal-btn, .plus-btn, .minus-btn, .multiply-btn, .divide-btn {
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.Calculator .operation-btn {
+  background: #8f60de;
+  color: white;
+}
+
+.Calculator button:active, .Calculator .operation-btn.pending {
+  opacity: .5;
+}
