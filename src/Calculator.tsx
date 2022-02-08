@@ -13,14 +13,6 @@ function Calculator() {
       return;
     }
 
-    if (input === '.') {
-      if (displayValue.includes('.')) {
-        return;
-      }
-      setDisplayValue(`${displayValue}.`);
-      return;
-    }
-
     let value = displayValue;
     // an operation was just selected, the next input should start a new value
     if (isDisplayResetPending) {
@@ -29,6 +21,15 @@ function Calculator() {
       // save the prior value for the upcoming calculation
       setPrevFloat(asFloat(displayValue));
     }
+
+    if (input === '.') {
+      if (value.includes('.')) {
+        return;
+      }
+      setDisplayValue(`${value}.`);
+      return;
+    }
+
     setDisplayValue(formatForDisplay(asFloat(`${value}${input}`)));
   }
 
